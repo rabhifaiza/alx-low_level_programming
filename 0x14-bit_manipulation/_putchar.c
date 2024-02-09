@@ -11,3 +11,17 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+/**
+ * _mod - function calculate the modul of a on b
+ * @a: first par (big num)
+ * @b: second par (smal num)
+ * Return: the resul of a mod b
+ */
+int _mod(int a, int b)
+{
+	while (a >= b)
+	{
+		a = a - b;
+	}
+	return (a);
+}
